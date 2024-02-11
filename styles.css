@@ -1,11 +1,6 @@
 
 /* Estilos banner video */
 
-* {
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
 #banner-video {
   position: relative;
   overflow: hidden;
@@ -125,9 +120,21 @@
 }
 
 .row{
-  background-image: url('/assets/bg-form.jpg');
+  /* background-image: url('/assets/bg-form.jpg'); */
+  background-color: black;
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  right: 50px;
+}
+
+/* snap */
+.snap-container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; /* Scroll snap vertical y obligatorio */
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+.snap-item {
+  scroll-snap-align: start; /* Alínea los elementos al inicio del contenedor */
+  height: 100vh; /* Altura completa de la ventana */
 }
