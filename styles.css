@@ -1,5 +1,11 @@
 
 /* Estilos banner video */
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
 #banner-video {
   position: relative;
   overflow: hidden;
@@ -105,4 +111,23 @@
 
 .input-group-append {
   cursor: pointer;
+}
+
+/* formulario */
+
+.full-height {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  
+}
+
+.row{
+  background-image: url('/assets/bg-form.jpg');
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  right: 50px;
 }
