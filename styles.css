@@ -1,3 +1,4 @@
+
 /* Estilos banner video */
 #banner-video {
   position: relative;
@@ -28,16 +29,43 @@
   z-index: 1;
   color: #fff;
   text-align: center;
+  border-radius: 50px;
 }
 /* finish banner video */
 
  /* Estilos carrrusel */
- .carousel {
+
+ main {
   position: relative;
+  overflow: hidden;
+  height: 100vh;
+ }
+ .carousel {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.carousel .content {
+  text-shadow:rgba(255, 191, 14, 0.664) 0 -2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .carousel-inner {
-  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -51,7 +79,7 @@
 }
 
 .carousel-item img {
-  width: 100%;
+  min-width: 100%;
   height: auto;
 }
 
@@ -67,10 +95,14 @@
 }
 
 .carousel-control.prev {
-  left: 10px;
+  position: absolute;
+  left: 20px;
 }
 
 .carousel-control.next {
-  right: 10px;
+  right:20px;
 }
 
+.input-group-append {
+  cursor: pointer;
+}

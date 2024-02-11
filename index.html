@@ -5,15 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio Frontend</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/icon/music-player.svg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
   <div><!-- divpage-initial -->
 
-    <header class="container-fluid">
-      <div id="banner-video">
+    <header >
+      <!-- navbar -->
+      <div class="container-fluid" id="banner-video">
+        <nav class="navbar navbar-expand-lg bg-transparent text-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand rounded" href="#">Navbar w/ text</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Navbar text with an inline element
+              </span>
+            </div>
+          </div>
+        </nav>
+
         <video autoplay muted loop>
-          <source src="/assets/bg-video.mp4" type="video/mp4">
+          <source src="/assets/bg-video3.mp4" type="video/mp4">
           Tu navegador no soporta videos HTML5.
         </video>
         
@@ -24,28 +52,63 @@
       </div>   
   </header>
 
-  <main>
+  <main >
     <div id="carouselExample" class="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://picsum.photos/300/200?random=1" class="d-block w-100" alt="imagen2">
+      <div class="carousel-inner ">
+
+        <div class="carousel-item active container-fluid">
+          <div class="content">
+            <h1 class="fw-bold">Manizales 15 Febrero</h1>
+            <p class="fst-italic fs-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus, delectus magni sunt odit vel laboriosam commodi, corporis, nesciunt laudantium maiores odio deleniti possimus ipsum voluptas! Dolorem repudiandae dolor ea. </p>
+          </div>
+          <img src="https://picsum.photos/1920/1080?random=1" alt="imagen2">
         </div>
         <div class="carousel-item">
-          <img src="https://picsum.photos/300/200?random=2" class="d-block w-100" alt=".imagen 2">
+          <h1 class="fw-bold">Lugares Destacados</h1>
+          <img src="https://picsum.photos/1920/1080?random=2" alt="imagen 2">
         </div>
         <div class="carousel-item">
-          <img src="https://picsum.photos/300/200?random=3" class="d-block w-100" alt="...">
+          <img src="https://picsum.photos/1920/1080?random=3" alt="imagen 3">
         </div>
       </div>
-      <button class="carousel-control prev btn btn-outline-primary" type="button">
-        Previous
+      <button class="carousel-control prev btn btn-outline-info" type="button">
+        <i class="bi bi-arrow-left-circle-fill"></i> Previous
       </button>
-      <button class="carousel-control next btn btn-outline-primary" type="button">
-        Next
+      <button class="carousel-control next btn btn-outline-info" type="button">
+        Next <i class="bi bi-arrow-right-circle-fill"></i>
       </button>
-    </div>    
-       
+    </div> 
   </main>
+    <!-- Formulario de reserva de Boletería -->
+    <form>
+      <div><h1 class="text-center">Reserva de Boletería</h1></div>
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Lugar</label>
+         <select class="form-select" aria-label="Default select example">
+        <option selected>Manizales</option>
+        <option value="1">Medellín</option>
+        <option value="2">Bogotá</option>
+        <option value="3">Barranquilla</option>
+      </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Fecha</label>
+        <input type="date" class="form-control" id="exampleInputPassword1">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Documento</label>
+        <input type="number" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
 
 
   </div> <!-- page-finish -->
