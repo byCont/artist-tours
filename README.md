@@ -1,1 +1,1 @@
-# prueba-tec-fronted
+# prueba-tec-frontend
