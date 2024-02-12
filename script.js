@@ -1,3 +1,5 @@
+
+// Modal con JQuiery//
 $(document).ready(function(){
   var currentIndex = 0;
   var items = $('.carousel-item');
@@ -5,8 +7,10 @@ $(document).ready(function(){
 
   function cycleItems() {
     var item = $('.carousel-item').eq(currentIndex);
-    items.hide();
-    item.css('display', 'block');
+    // items.slideUp(400); 
+    // item.slideDown(400);
+    items.animate({width: 'hide'}, 400);
+    item.animate({width: 'show'}, 400);
   }
 
   $('.carousel-control.prev').click(function() {
@@ -24,4 +28,39 @@ $(document).ready(function(){
     }
     cycleItems();
   });
+});
+
+//captura de datos del form
+document.getElementById('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+
+  var $lugar = document.getElementById('lugar').value;
+  var $fecha = document.getElementById('fecha').value;
+  var $doc = document.getElementById('doc').value;
+
+
+  var modal = document.getElementById('myModal');
+  modal.style.display = "block";
+ 
+  var datosContainer = document.getElementById('datosModal');
+  datosContainer.innerHTML = '';
+
+  var lugarElement = document.createElement('p');
+  lugarElement.textContent = 'Cuidad: ' + $lugar;
+  datosContainer.appendChild(lugarElement);
+
+  var fechaElement = document.createElement('p');
+  fechaElement.textContent = 'Fecha: ' + $fecha;
+  datosContainer.appendChild(fechaElement);
+
+  var docElement = document.createElement('p');
+  docElement.textContent = 'Documento: ' + $doc;
+  datosContainer.appendChild(docElement);
+});
+
+//Close
+document.getElementsByClassName('close')[0].addEventListener('click', function() {
+  var modal = document.getElementById('myModal');
+  modal.style.display = "none";
 });

@@ -66,6 +66,15 @@
   border-radius: 10px;
 }
 
+.inicio{
+  text-shadow:rgba(255, 191, 14, 0.664) 0 -2px;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 50px; /* Espacio del borde inferior */
+  margin-left: 50px; 
+}
+
 .carousel-inner {
   width: 100%;
   overflow: hidden;
@@ -135,4 +144,45 @@
 .snap-item {
   scroll-snap-align: start; /* Alínea los elementos al inicio del contenedor */
   height: 100vh; /* Altura completa de la ventana */
+}
+
+h1{
+  font-family: 'Stretch Pro Regular','Courier New', Courier, monospace, Arial;
+  text-shadow:rgba(255, 191, 14, 0.664) 0 -2px;
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 20%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
