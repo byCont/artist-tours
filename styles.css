@@ -1,6 +1,5 @@
 
-/* Estilos banner video */
-
+/* Banner Video */
 #banner-video {
   position: relative;
   overflow: hidden;
@@ -34,13 +33,13 @@
 }
 /* /////////// */
 
- /* Estilos carrrusel */
-
+ /* Carousel */
  main {
   position: relative;
   overflow: hidden;
   height: 100vh;
  }
+
  .carousel {
   position: absolute;
   overflow: hidden;
@@ -71,7 +70,7 @@
   color: #fff;
   bottom: 0;
   left: 0;
-  margin-bottom: 50px; /* Espacio del borde inferior */
+  margin-bottom: 50px; 
   margin-left: 50px; 
 }
 
@@ -110,6 +109,7 @@
 }
 
 .carousel-control.next {
+  position: absolute;
   right:20px;
 }
 
@@ -117,15 +117,13 @@
   cursor: pointer;
 }
 
-/* formulario */
-
+/* Form */
 .full-height {
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   height: 100vh;
-  
 }
 
 .boleta{
@@ -134,16 +132,16 @@
   background-position: center;
 }
 
-/* snap */
+/* Snap */
 .snap-container {
   overflow-y: scroll;
-  scroll-snap-type: y mandatory; /* Scroll snap vertical y obligatorio */
-  height: 100vh; /* Altura completa de la ventana */
+  scroll-snap-type: y mandatory; 
+  height: 100vh; 
 }
 
 .snap-item {
-  scroll-snap-align: start; /* Alínea los elementos al inicio del contenedor */
-  height: 100vh; /* Altura completa de la ventana */
+  scroll-snap-align: start;
+  height: 100vh;
 }
 
 h1{

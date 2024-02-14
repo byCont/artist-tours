@@ -1,5 +1,5 @@
 
-// Modal con JQuiery//
+// Modal witch JQuiery//
 $(document).ready(function(){
   var currentIndex = 0;
   var items = $('.carousel-item');
@@ -30,15 +30,13 @@ $(document).ready(function(){
   });
 });
 
-//captura de datos del form
+//Form: Data Capture//
 document.getElementById('form').addEventListener('submit', function(event) {
   event.preventDefault();
-
 
   var $lugar = document.getElementById('lugar').value;
   var $fecha = document.getElementById('fecha').value;
   var $doc = document.getElementById('doc').value;
-
 
   var modal = document.getElementById('myModal');
   modal.style.display = "block";
@@ -59,7 +57,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
   datosContainer.appendChild(docElement);
 });
 
-//Close
+//Close Modal//
 document.getElementsByClassName('close')[0].addEventListener('click', function() {
   var modal = document.getElementById('myModal');
   modal.style.display = "none";
