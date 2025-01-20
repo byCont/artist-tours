@@ -341,53 +341,14 @@ a:focus {
   font-weight: bold;
 }
 
-.heathy_section {
-  background-image: url(../images/healthy-bg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
-  text-align: center;
-}
+/* tours section */
 
-.heathy_section h2 {
-  font-weight: bold;
-}
 
-.heathy_section p {
-  margin-top: 35px;
-}
+/* end tours section  */
 
-.heathy_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 45px;
-}
-
-.heathy_section .btn-box a {
-  display: inline-block;
-  padding: 8px 35px;
-  background-color: transparent;
-  border: 1.5px solid #ffffff;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-  text-transform: uppercase;
-}
-
-.heathy_section .btn-box a:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
 
 .trainer_section {
-  background-image: url(../images/trainer-bg.jpg);
+  background-image: url(../images/healthy-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;

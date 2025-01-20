@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Neogym</title>
+  <title>SalsaTours</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -50,7 +50,7 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="why.html"> Why us </a>
+                  <a class="nav-link" href="tours.html"> Tours </a>
                 </li>
                 </li>
                 <li class="nav-item active">
@@ -208,10 +208,14 @@
   <!-- footer section -->
   <footer class="container-fluid footer_section">
     <p>
-      &copy; 2020 All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
+      &copy; <span id="currentYear"></span> Daniel Cont
+      <a href="https://github.com/byCont/artist-tours">Github Page</a>
     </p>
   </footer>
+  <!-- currentYear -->
+  <script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+  </script>
   <!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
