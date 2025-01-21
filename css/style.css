@@ -2,6 +2,8 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
   background-color: #ffffff;
+  width:100%;
+  overflow-x:hidden;
 }
 
 .layout_padding {
@@ -258,7 +260,7 @@ a:focus {
   background-color: transparent;
   border: 1.5px solid #ffffff;
   color: #ffffff;
-  border-radius: 0px;
+  border-radius: 50px;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -287,13 +289,12 @@ a:focus {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 100%;
-  opacity: 1;
 }
 
 .slider_section #carouselExampleIndicators .carousel-indicators li.active {
   border: 4px solid #ffffff;
 }
-
+/* us_section */
 .us_section {
   background-image: url(../images/us-bg.jpg);
   background-size: cover;
@@ -301,49 +302,69 @@ a:focus {
   color: #ffffff;
 }
 
-.us_section .us_container {
+.us_section .container {
   padding-top: 25px;
 }
 
-.us_section .us_container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.us_section .image-box {
+  position: relative;
   text-align: center;
-  margin: 25px 10px 0 10px;
+  color: white;
+  border-radius: 15px; /* Añadir bordes redondeados para consistencia */
+  /*overflow: hidden;  Asegurar que el contenido no se desborde */
+  margin-top: 55px;
 }
 
-.us_section .us_container .box .img-box {
-  height: 100px;
+.us_section .image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Añadir bordes redondeados para consistencia */
+}
+
+.us_section .image-box .card-body {
+  position: absolute;
+  bottom: 0; /* Posicionar en la parte inferior */
+  left: 0;
+  width: 100%; /* Ocupar todo el ancho de la imagen */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 0 0 15px 15px; /* Bordes redondeados solo en la parte inferior */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra para mejorar la apariencia */
+}
+
+.us_section .image-box .card-body h5 {
+  margin-bottom: 10px; /* Añadir margen inferior para separar el título del texto */
+}
+
+.us_section .image-box .card-body p {
+  margin-bottom: 25px; /* Añadir margen inferior para separar los párrafos */
+}
+
+.us_section .btn {
+  /* margin-top: -10px;  Añadir margen superior para separar el botón del texto */
+  border-radius: 50px;
+  margin-top: -25px;
+  margin-bottom: -85px;
+}
+
+.trainer_section .box .social_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 225px;
+  padding: 12px 45px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin-top: -25px;
 }
+/* end us_section */
 
-.us_section .us_container .box .img-box img {
-  max-width: 100%;
-}
 
-.us_section .us_container .box .detail-box h5 {
-  font-weight: bold;
-}
 
 /* tours section */
-
-
 /* end tours section  */
 
 
