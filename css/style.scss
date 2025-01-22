@@ -67,7 +67,7 @@ body {
     font-weight: bold;
     position: relative;
     padding-bottom: 5px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     &::before {
       content: "";
@@ -246,7 +246,7 @@ a:focus {
     h1,
     h2,
     h3 {
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-weight: bold;
 
     }
