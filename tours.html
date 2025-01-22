@@ -74,65 +74,101 @@
   </div>
 
 <!-- Artist section -->
-<section class="us_section">
-  <div class="container">
-    <div class="heading_container text-white text-center">
-      <h2>Artists</h2>
+<section class="us_section layout_padding bg-dark text-white py-5">
+<div class="container">
+    <div class="heading_container text-center mb-5">
+<h2 class="sr-only">Artistas Destacados</h2>
+<p class="h1" aria-hidden="true">Artistas</p>
     </div>
-    <!-- Contenedor horizontal con scroll -->
-    <div class="row flex-nowrap overflow-auto">
+    
+<div class="row justify-content-center">
       <!-- Grupo Niche -->
-      <div class="col-10 col-md-6 col-lg-10 flex-shrink-0 mb-4">
-        <div class="image-box">
-          <img src="../assets/grupo_niche.jpg" class="card-img-top" alt="Grupo Niche">
-          <div class="card-body d-flex flex-column">
-            <h3 class="card-title">Grupo Niche</h3>
-            <p class="card-text">Breve biografía y logros del Grupo Niche.</p>
-            <p class="card-text"><strong>Ciudades y Fechas:</strong> Bogotá (15 de febrero), Medellín (22 de febrero), Cali (1 de marzo), Barranquilla (8 de marzo).</p>
-            <div class="mt-auto text-center">
-              <a href="#entradas" class="btn">Comprar Entradas</a>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="card h-100 shadow-sm bg-dark text-white border-light">
+<img src="../assets/grupo_niche.jpg" class="card-img-top img-fluid" alt="Grupo Niche en concierto" loading="lazy">
+<div class="card-body d-flex flex-column">
+<h3 class="card-title h5">Grupo Niche</h3>
+<p class="card-text text-truncate">Fundado en 1979, pioneros de la salsa colombiana. Ganadores de múltiples premios Grammy Latino.</p>
+<ul class="list-unstyled small mb-3">
+<li>📍 Bogotá - 15 Feb</li>
+<li>📍 Medellín - 22 Feb</li>
+<li class="collapse more-dates">📍 Cali - 1 Mar</li>
+<li class="collapse more-dates">📍 Barranquilla - 8 Mar</li>
+            </ul>
+<div class="mt-auto d-grid gap-2">
+<button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#artista1Modal">
+Ver más
+</button>
+<a href="#entradas" class="btn btn-primary btn-sm" role="button">Comprar entradas</a>
+</div>
+</div>
+</div>
+</div>
+
       <!-- David Zahan -->
-      <div class="col-10 col-md-6 col-lg-10 flex-shrink-0 mb-4">
-        <div class="image-box">
-          <img src="../assets/david_zahan.jpg" class="card-img-top" alt="David Zahan">
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm bg-dark text-white border-light">
+          <img src="../assets/david_zahan.jpg" class="card-img-top img-fluid" alt="David Zahan cantando" loading="lazy">
           <div class="card-body d-flex flex-column">
-            <h3 class="card-title">David Zahan</h3>
-            <p class="card-text">Breve biografía y logros de David Zahan.</p>
-            <p class="card-text"><strong>Ciudades y Fechas:</strong> Barranquilla (10 de febrero), Cartagena (17 de febrero), Bogotá (24 de febrero), Medellín (3 de marzo).</p>
-            <div class="mt-auto text-center">
-              <a href="#entradas" class="btn">Comprar Entradas</a>
+            <h3 class="card-title h5">David Zahan</h3>
+            <p class="card-text text-truncate">Voz líder de Orquesta Zodiac, reconocido por su estilo único en salsa romántica.</p>
+            <ul class="list-unstyled small mb-3">
+              <li>📍 Barranquilla - 10 Feb</li>
+              <li>📍 Cartagena - 17 Feb</li>
+              <li class="collapse more-dates">📍 Bogotá - 24 Feb</li>
+              <li class="collapse more-dates">📍 Medellín - 3 Mar</li>
+            </ul>
+            <div class="mt-auto d-grid gap-2">
+              <button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#artista2Modal">
+                Ver más
+              </button>
+              <a href="#entradas" class="btn btn-primary btn-sm" role="button">Comprar entradas</a>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Yiyo Sarante -->
-      <div class="col-10 col-md-6 col-lg-10 flex-shrink-0 mb-4">
-        <div class="image-box">
-          <img src="../assets/yiyo_sarante.jpg" class="card-img-top" alt="Yiyo Sarante">
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm bg-dark text-white border-light">
+          <img src="../assets/yiyo_sarante.jpg" class="card-img-top img-fluid" alt="Yiyo Sarante en el escenario" loading="lazy">
           <div class="card-body d-flex flex-column">
-            <h3 class="card-title">Yiyo Sarante</h3>
-            <p class="card-text">Breve biografía y logros de Yiyo Sarante.</p>
-            <p class="card-text"><strong>Ciudades y Fechas:</strong> Medellín (12 de febrero), Cali (19 de febrero), Bogotá (26 de febrero), Barranquilla (5 de marzo).</p>
-            <div class="mt-auto text-center">
-              <a href="#entradas" class="btn">Comprar Entradas</a>
+            <h3 class="card-title h5">Yiyo Sarante</h3>
+            <p class="card-text text-truncate">Rey de la salsa sensual, famoso por éxitos como "La Vecina" y "Dime cómo se hace".</p>
+            <ul class="list-unstyled small mb-3">
+              <li>📍 Medellín - 12 Feb</li>
+              <li>📍 Cali - 19 Feb</li>
+              <li class="collapse more-dates">📍 Bogotá - 26 Feb</li>
+              <li class="collapse more-dates">📍 Barranquilla - 5 Mar</li>
+            </ul>
+            <div class="mt-auto d-grid gap-2">
+              <button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#artista3Modal">
+                Ver más
+              </button>
+              <a href="#entradas" class="btn btn-primary btn-sm" role="button">Comprar entradas</a>
             </div>
           </div>
         </div>
       </div>
+
       <!-- La Sonora Ponceña -->
-      <div class="col-10 col-md-6 col-lg-10 flex-shrink-0 mb-4">
-        <div class="image-box">
-          <img src="../assets/sonora_ponceña.jpeg" class="card-img-top" alt="La Sonora Ponceña">
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm bg-dark text-white border-light">
+          <img src="../assets/sonora_ponceña.jpeg" class="card-img-top img-fluid" alt="La Sonora Ponceña en vivo" loading="lazy">
           <div class="card-body d-flex flex-column">
-            <h3 class="card-title">La Sonora Ponceña</h3>
-            <p class="card-text">Breve biografía y logros de La Sonora Ponceña.</p>
-            <p class="card-text"><strong>Ciudades y Fechas:</strong> Bogotá (14 de febrero), Medellín (21 de febrero), Barranquilla (28 de febrero), Cali (7 de marzo).</p>
-            <div class="mt-auto text-center">
-              <a href="#entradas" class="btn">Comprar Entradas</a>
+            <h3 class="card-title h5">La Sonora Ponceña</h3>
+            <p class="card-text text-truncate">Leyenda de la salsa puertorriqueña con más de 60 años de trayectoria musical.</p>
+            <ul class="list-unstyled small mb-3">
+              <li>📍 Bogotá - 14 Feb</li>
+              <li>📍 Medellín - 21 Feb</li>
+              <li class="collapse more-dates">📍 Barranquilla - 28 Feb</li>
+              <li class="collapse more-dates">📍 Cali - 7 Mar</li>
+            </ul>
+            <div class="mt-auto d-grid gap-2">
+              <button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#artista4Modal">
+                Ver más
+              </button>
+              <a href="#entradas" class="btn btn-primary btn-sm" role="button">Comprar entradas</a>
             </div>
           </div>
         </div>
@@ -141,18 +177,180 @@
   </div>
 </section>
 
-<style>
-  .row.overflow-auto {
-  scrollbar-width: thin; /* Para navegadores como Firefox */
-  }
-  .row.overflow-auto::-webkit-scrollbar {
-    height: 3px; /* Altura del scroll horizontal */
-  }
-  .row.overflow-auto::-webkit-scrollbar-thumb {
-    background: #ccc; /* Color del scroll */
-    border-radius: 4px;
-  }
-</style>
+<!-- Modales -->
+<!-- Modal Grupo Niche -->
+<div class="modal fade" id="artista1Modal" tabindex="-1" aria-labelledby="artista1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title h5" id="artista1ModalLabel">Grupo Niche</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../assets/grupo_niche.jpg" class="img-fluid rounded mb-3" alt="Grupo Niche en concierto">
+            </div>
+            <div class="col-md-6">
+              <p class="lead">Fundado en 1979 por Jairo Varela, el Grupo Niche es una de las agrupaciones de salsa más importantes de Colombia.</p>
+              <h4 class="h6">Próximas fechas:</h4>
+              <ul class="list-unstyled">
+                <li>🎫 Bogotá - 15 Feb - Estadio El Campín</li>
+                <li>🎫 Medellín - 22 Feb - Estadio Atanasio Girardot</li>
+                <li>🎫 Cali - 1 Mar - Estadio Pascual Guerrero</li>
+                <li>🎫 Barranquilla - 8 Mar - Estadio Metropolitano</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h4 class="h6">Reconocimientos:</h4>
+            <ul>
+              <li>2 Premios Grammy Latino</li>
+              <li>Premio Billboard de la Música Latina</li>
+              <li>Inducción al Salón de la Fama de la Música Latina</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <a href="#entradas" class="btn btn-primary">Comprar entradas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal David Zahan -->
+<div class="modal fade" id="artista2Modal" tabindex="-1" aria-labelledby="artista2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h3 class="modal-title h5" id="artista2ModalLabel">David Zahan</h3>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../assets/david_zahan.jpg" class="img-fluid rounded mb-3" alt="David Zahan en concierto">
+          </div>
+          <div class="col-md-6">
+            <p class="lead">Vocalista principal de la Orquesta Zodiac, conocido como "La Voz de la Salsa Romántica".</p>
+            <h4 class="h6">Próximas fechas:</h4>
+            <ul class="list-unstyled">
+              <li>🎫 Barranquilla - 10 Feb - Teatro Amira de la Rosa</li>
+              <li>🎫 Cartagena - 17 Feb - Centro de Convenciones</li>
+              <li>🎫 Bogotá - 24 Feb - Arena Bogotá</li>
+              <li>🎫 Medellín - 3 Mar - Teatro Metropolitano</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-3">
+          <h4 class="h6">Éxitos destacados:</h4>
+          <ul>
+            <li>"Amor de Verdad"</li>
+            <li>"Buscándote"</li>
+            <li>"Dime Qué Pasó"</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer border-secondary">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <a href="#entradas" class="btn btn-primary">Comprar entradas</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Yiyo Sarante -->
+<div class="modal fade" id="artista3Modal" tabindex="-1" aria-labelledby="artista3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h3 class="modal-title h5" id="artista3ModalLabel">Yiyo Sarante</h3>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../assets/yiyo_sarante.jpg" class="img-fluid rounded mb-3" alt="Yiyo Sarante en vivo">
+          </div>
+          <div class="col-md-6">
+            <p class="lead">El "Gallero Mayor" de la salsa, famoso por su estilo único y carisma en el escenario.</p>
+            <h4 class="h6">Próximas fechas:</h4>
+            <ul class="list-unstyled">
+              <li>🎫 Medellín - 12 Feb - Estadio Atanasio Girardot</li>
+              <li>🎫 Cali - 19 Feb - Plaza de Toros</li>
+              <li>🎫 Bogotá - 26 Feb - Movistar Arena</li>
+              <li>🎫 Barranquilla - 5 Mar - Coliseo Elías Chegwin</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-3">
+          <h4 class="h6">Datos curiosos:</h4>
+          <ul>
+            <li>+ de 100 millones de streams digitales</li>
+            <li>15 álbumes de estudio</li>
+            <li>Gira mundial anual</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer border-secondary">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <a href="#entradas" class="btn btn-primary">Comprar entradas</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sonora Ponceña -->
+<div class="modal fade" id="artista4Modal" tabindex="-1" aria-labelledby="artista4ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h3 class="modal-title h5" id="artista4ModalLabel">La Sonora Ponceña</h3>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../assets/sonora_ponceña.jpeg" class="img-fluid rounded mb-3" alt="La Sonora Ponceña en concierto">
+          </div>
+          <div class="col-md-6">
+            <p class="lead">Fundada en 1954, icono de la salsa latina con fusión de jazz y música tropical.</p>
+            <h4 class="h6">Próximas fechas:</h4>
+            <ul class="list-unstyled">
+              <li>🎫 Bogotá - 14 Feb - Teatro Jorge Eliécer Gaitán</li>
+              <li>🎫 Medellín - 21 Feb - Teatro Universidad de Medellín</li>
+              <li>🎫 Barranquilla - 28 Feb - Sala Amira de la Rosa</li>
+              <li>🎫 Cali - 7 Mar - Teatro Municipal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-3">
+          <h4 class="h6">Reconocimientos:</h4>
+          <ul>
+            <li>Premio Grammy a la Excelencia Musical</li>
+            <li>Inducción al Salón de la Fama de la Salsa</li>
+            <li>+ de 40 producciones discográficas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer border-secondary">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <a href="#entradas" class="btn btn-primary">Comprar entradas</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- end artist section -->
 
 
